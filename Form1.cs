@@ -34,6 +34,11 @@ namespace Bai8_PhepTinhCoBan_radioButton
                 txtKQ.Text = (So1 * So2).ToString();
             }
             if (rdbChia.Checked)
+            if (So2 == 0)
+            {
+                txtKQ.Text = " Lỗi chia 0: ";
+            }
+            else 
             {
                 txtKQ.Text = (So1 / So2).ToString();
             }
